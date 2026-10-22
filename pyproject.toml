@@ -1,0 +1,10 @@
+[project]
+name = "ai-architecture"
+version = "0.1.0"
+requires-python = ">=3.15"
+dependencies = [
+    "dtreeviz>=2.3.2",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+    "statsmodels>=0.15.0",
+]

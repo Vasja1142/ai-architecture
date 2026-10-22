@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<flipper_length_mm &le; 206.5<br/>gini = 0.638<br/>samples = 100.0%<br/>value = [0.438, 0.204, 0.357]<br/>class = Adelie>, fillcolor="#fcefe6"] ;
+1 [label=<bill_length_mm &le; 43.35<br/>gini = 0.429<br/>samples = 62.5%<br/>value = [0.692, 0.303, 0.005]<br/>class = Adelie>, fillcolor="#f0b990"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<bill_length_mm &le; 42.35<br/>gini = 0.067<br/>samples = 43.5%<br/>value = [0.966, 0.034, 0.0]<br/>class = Adelie>, fillcolor="#e68640"] ;
+1 -> 2 ;
+3 [label=<gini = 0.015<br/>samples = 40.2%<br/>value = [0.993, 0.007, 0.0]<br/>class = Adelie>, fillcolor="#e5823a"] ;
+2 -> 3 ;
+4 [label=<gini = 0.463<br/>samples = 3.3%<br/>value = [0.636, 0.364, 0.0]<br/>class = Adelie>, fillcolor="#f4c9aa"] ;
+2 -> 4 ;
+5 [label=<bill_depth_mm &le; 15.4<br/>gini = 0.148<br/>samples = 18.9%<br/>value = [0.063, 0.921, 0.016]<br/>class = Chinstrap>, fillcolor="#4ae78c"] ;
+1 -> 5 ;
+6 [label=<gini = 0.0<br/>samples = 0.3%<br/>value = [0.0, 0.0, 1.0]<br/>class = Gentoo>, fillcolor="#8139e5"] ;
+5 -> 6 ;
+7 [label=<gini = 0.121<br/>samples = 18.6%<br/>value = [0.065, 0.935, 0.0]<br/>class = Chinstrap>, fillcolor="#47e78a"] ;
+5 -> 7 ;
+8 [label=<bill_depth_mm &le; 17.65<br/>gini = 0.107<br/>samples = 37.5%<br/>value = [0.016, 0.04, 0.944]<br/>class = Gentoo>, fillcolor="#8845e7"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<gini = 0.0<br/>samples = 35.4%<br/>value = [0.0, 0.0, 1.0]<br/>class = Gentoo>, fillcolor="#8139e5"] ;
+8 -> 9 ;
+10 [label=<bill_depth_mm &le; 18.95<br/>gini = 0.408<br/>samples = 2.1%<br/>value = [0.286, 0.714, 0.0]<br/>class = Chinstrap>, fillcolor="#88efb3"] ;
+8 -> 10 ;
+11 [label=<gini = 0.0<br/>samples = 0.6%<br/>value = [1.0, 0.0, 0.0]<br/>class = Adelie>, fillcolor="#e58139"] ;
+10 -> 11 ;
+12 [label=<gini = 0.0<br/>samples = 1.5%<br/>value = [0.0, 1.0, 0.0]<br/>class = Chinstrap>, fillcolor="#39e581"] ;
+10 -> 12 ;
+}
